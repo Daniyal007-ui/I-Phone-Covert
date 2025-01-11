@@ -8,16 +8,16 @@ export default function Header() {
   return (
     <>
    
-    <div className="bg-gray-100 w-full flex justify-between items-center px-3  sm:h-16 h-auto">
+    <div className="bg-gray-100 w-full flex justify-between items-center px-3   h-[70px]">
     <SheetSide/>
       {/* Logo Section */}
       <div className=" flex items-center justify-center sm:justify-start w-full ">
         <Image
           src="/logo.png"
           alt="logo"
-          height={300}
-          width={300}
-          className="object-cover md:h-[60px] md:w-[200px]  sm:h-[50px]  sm:w-auto sm:pl-3"
+          height={200}
+          width={200}
+          className="object-cover md:h-[60px] md:w-[200px]  sm:h-[30px]  sm:w-auto sm:pl-3"
         />
       </div>
 
