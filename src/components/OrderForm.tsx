@@ -110,7 +110,7 @@ const OrderForm = () => {
 
           {/* Phone Model Select */}
           <div className="flex flex-col">
-            <label htmlFor="phoneModel" className="font-semibold">Select Phone Model</label>
+            <label htmlFor="phoneModel" className="font-semibold">Select IPhone Model</label>
             <select
               id="phoneModel"
               name="phoneModel"
