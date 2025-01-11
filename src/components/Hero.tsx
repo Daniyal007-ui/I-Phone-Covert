@@ -6,22 +6,13 @@ import OrderForm from './OrderForm';
 
 export default function Hero() {
   const [mainImage, setMainImage] = useState('/1.jpg');
-  const [quantity, setQuantity] = useState(1); // Default quantity is 1
+  const [quantity] = useState(1); // Fixed quantity to 1
 
   // Price mapping based on quantity
   const priceMapping: { [key: number]: number } = {
     1: 220,
     2: 300,
     3: 400,
-  };
-
-  // Handle quantity change (either + or -)
-  const handleQuantityChange = (type: 'increase' | 'decrease') => {
-    setQuantity((prev) => {
-      if (type === 'increase' && prev < 3) return prev + 1; // Limit max quantity to 3
-      if (type === 'decrease' && prev > 1) return prev - 1; // Limit min quantity to 1
-      return prev; // Return the same value if no change is possible
-    });
   };
 
   // Function to change the main image when a thumbnail is clicked
@@ -64,22 +55,9 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Quantity Selection with + and - */}
-        <div className="flex items-center justify-center sm:justify-start mt-4">
-            Quantity:
-          <button
-            onClick={() => handleQuantityChange('decrease')}
-            className="w-10 h-10 bg-gray-300 text-xl font-bold rounded-full hover:bg-gray-400 transition"
-          >
-            -
-          </button>
-          <span className="mx-4 text-xl font-semibold">{quantity}</span>
-          <button
-            onClick={() => handleQuantityChange('increase')}
-            className="w-10 h-10 bg-gray-300 text-xl font-bold rounded-full hover:bg-gray-400 transition"
-          >
-            +
-          </button>
+        {/* Quantity Information */}
+        <div className="mt-4">
+          <p className="text-xl font-semibold">Quantity: 1 piece</p>
         </div>
 
         <h2 className="text-black font-bold mt-4 text-xl">DESCRIPTION:</h2>
