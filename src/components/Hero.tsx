@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="w-full sm:w-1/3 text-center sm:text-left sm:ml-6 mb-6 sm:mb-0">
         <h1 className="font-bold text-2xl sm:text-3xl text-black">iPhone NFC Cover</h1>
         <p className="text-xl text-gray-500 mt-2">
-          Ink Screen Protective Smart Phone Case Compatible with iPhone 14 PRO Max, NFC Transmission, Long-Lasting Imaging Display, Black
+          Ink Screen Protective Smart Phone Case Compatible with all IPhone&apos;s , NFC Transmission, Long-Lasting Imaging Display, Black
         </p>
         <h2 className="text-black font-bold text-xl sm:text-2xl mt-4">PRICE:</h2>
 
