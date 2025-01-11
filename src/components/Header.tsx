@@ -13,7 +13,7 @@ export default function Header() {
       {/* Logo Section */}
       <div className=" flex items-center justify-center sm:justify-start w-full ">
         <Image
-          src="/logo.jpg"
+          src="/logo.png"
           alt="logo"
           height={300}
           width={300}
