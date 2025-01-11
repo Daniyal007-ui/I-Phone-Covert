@@ -9,7 +9,7 @@ const OrderForm = () => {
     contact: '',
     city: '',
     address: '',
-    item: 'iphone_15',  // Default item selection
+    item: 'iphone_15 pro Max',  // Default item selection
   });
   const [formSubmitted, setFormSubmitted] = useState(false);  // Track form submission status
 
@@ -47,7 +47,7 @@ const OrderForm = () => {
             contact: '',
             city: '',
             address: '',
-            item: 'iphone_15',
+            item: 'iphone_15 Pro Max',
           });
         },
         (error) => {
@@ -124,8 +124,8 @@ const OrderForm = () => {
             required
             className="border p-2 rounded"
           >
-            <option value="iphone_15">iPhone 15</option>
-            <option value="iphone_16">iPhone 16</option>
+            <option value="iphone_15">iPhone 15 Pro Max</option>
+            <option value="iphone_16">iPhone 16 pro Max</option>
           </select>
         </div>
 
